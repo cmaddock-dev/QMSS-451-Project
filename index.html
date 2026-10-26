@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Balancing Risks in a Data Dependent Time | Cameron Maddock</title>
+<style>
+  :root {
+    --navy: #1f4e79;
+    --ink: #222;
+    --muted: #666;
+    --rule: #d9dee5;
+    --paper: #fbfbf9;
+    --accent: #b5543a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .poster {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 28px 40px;
+  }
+  header {
+    border-bottom: 4px solid var(--navy);
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+  }
+  .kicker {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 6px;
+  }
+  h1 {
+    color: var(--navy);
+    font-size: 40px;
+    line-height: 1.15;
+    margin: 0 0 10px;
+  }
+  .byline {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: var(--muted);
+    margin: 0;
+  }
+  .summary {
+    font-size: 18px;
+    font-style: italic;
+    margin: 0 0 22px;
+  }
+  .recommendation {
+    background: var(--navy);
+    color: #fff;
+    padding: 18px 22px;
+    margin-bottom: 26px;
+  }
+  .recommendation .label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #cfe0ef;
+    margin: 0 0 6px;
+  }
+  .recommendation p {
+    font-size: 22px;
+    margin: 0;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+  }
+  .panel {
+    border-top: 3px solid var(--navy);
+    padding-top: 12px;
+  }
+  .panel h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin: 0 0 4px;
+  }
+  .panel .headline {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 0 12px;
+  }
+  .panel h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 18px 0 6px;
+  }
+  p { margin: 0 0 12px; font-size: 15px; }
+  ul { padding-left: 18px; margin: 0 0 12px; font-size: 15px; }
+  li { margin-bottom: 6px; }
+  figure { margin: 14px 0; }
+  figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid var(--rule);
+    background: #fff;
+  }
+  figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+  .bottom {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 22px;
+    margin-top: 28px;
+    border-top: 1px solid var(--rule);
+    padding-top: 18px;
+  }
+  .bottom h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin: 0 0 8px;
+  }
+  footer {
+    margin-top: 26px;
+    border-top: 1px solid var(--rule);
+    padding-top: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  footer p { font-size: 12px; margin: 0 0 6px; }
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .bottom { grid-template-columns: 1fr; }
+    h1 { font-size: 32px; }
+  }
+  @media (max-width: 560px) {
+    .grid { grid-template-columns: 1fr; }
+    .recommendation p { font-size: 19px; }
+  }
+</style>
+</head>
+<body>
+<main class="poster">
+
+  <header>
+    <p class="kicker">2025 College Fed Challenge</p>
+    <h1>Balancing Risks in a Data Dependent Time</h1>
+    <p class="byline">Cameron Maddock &middot; University of Michigan team &middot; Finished 4th of 118 schools nationwide &middot; Data as of September 2025</p>
+  </header>
+
+  <p class="summary">The committee had to decide whether the balance of risks called for a change in the federal funds rate. Inflation is still above the Fed&rsquo;s 2% target, but the labor market is weakening, and the demand side of that weakness is the more urgent risk.</p>
+
+  <section class="recommendation">
+    <p class="label">Recommendation</p>
+    <p>Lower the federal funds rate by 25 basis points, to a range of 3.75&ndash;4.00%.</p>
+  </section>
+
+  <section class="grid">
+
+    <article class="panel">
+      <h2>Growth</h2>
+      <p class="headline">Strong headline, weak foundation.</p>
+      <p>Real GDP grew at an annualized rate of 3.8% in the second quarter. That was a final revision up from 3.3%, and it followed a 0.6% contraction in the first quarter. The revision came from consumer spending.</p>
+      <figure>
+        <img src="fig-gdp.png" alt="Line chart of annualized real GDP growth, 2020 to 2024, swinging between about -1% and 7%.">
+        <figcaption>Annualized real GDP growth. Source: BEA (as shown in the 2025 deck).</figcaption>
+      </figure>
+      <p>The composition matters more than the headline. Real final sales to private domestic purchasers grew 2.9%, the same pace as in the first quarter. Net exports added 4.83 points to second-quarter GDP, but only because imports fell at a 29.3% annualized rate. That drop reflects businesses and consumers unwinding inventories stockpiled in the first quarter ahead of tariffs.</p>
+      <p>Fixed nonresidential investment contributed 0.77 points in the second quarter, down from 1.21 in the first. Our reading was that this growth is not durable. Much of the weakness also comes from factors outside the Fed&rsquo;s control, such as foreign policy and immigration.</p>
+    </article>
+
+    <article class="panel">
+      <h2>Labor</h2>
+      <p class="headline">Demand is the more pressing risk.</p>
+      <p>Supply and demand both appear to be weakening at once. If the two offset each other, the market can stay in balance. The question is whether one side is deteriorating faster than the other.</p>
+      <figure>
+        <img src="fig-unemployment.png" alt="Line chart of the unemployment rate, 2019 to 2025: a spike in 2020, then a decline, then a slow rise.">
+        <figcaption>Unemployment rate. Source: BLS (as shown in the 2025 deck).</figcaption>
+      </figure>
+      <figure>
+        <img src="fig-payrolls.png" alt="Line chart of monthly nonfarm payroll gains, 2022 to 2025, trending down.">
+        <figcaption>Monthly nonfarm payroll gains, thousands. Source: BLS (as shown in the 2025 deck).</figcaption>
+      </figure>
+      <p>The August unemployment rate was 4.3%, the highest in nearly four years. The economy added only 29,000 jobs in August, down from 73,000 in July and well below the 2024 average of 186,000 a month. BLS had no September data because of a lapse in appropriations. Private surveys from ADP, Revelio, and Indeed point to weak job growth continuing.</p>
+      <h3>Supply</h3>
+      <p>Slower population growth is the main reason job growth has slowed. An AEI estimate puts potential monthly job growth at 10,000 to 40,000 in the second half of 2025, compared with 140,000 to 180,000 in 2024. Quit and layoff rates held steady in August, which points to a frozen market rather than a collapse.</p>
+      <h3>Demand</h3>
+      <p>Outside health care and education, industries lost an average of 13,000 jobs each in August. Job openings were 7.2 million, and there were more unemployed people than openings for the first time since 2021.</p>
+      <figure>
+        <img src="fig-job-openings.png" alt="Line chart of total nonfarm job openings, 2019 to 2025: peak in 2022, then decline.">
+        <figcaption>Total nonfarm job openings, thousands. Source: BLS (as shown in the 2025 deck).</figcaption>
+      </figure>
+      <p>Large downward revisions to the last two job reports suggest demand may be weakening more than we can see in real time. An early estimate also points to a downward revision of 911,000 jobs between April 2024 and March 2025.</p>
+      <p>Discouraged workers numbered about 492,000 in August, up 40,000 from July. Federal hiring is falling sharply, with 300,000 fewer federal workers expected by year-end than in January, the largest 12-month reduction since 1946.</p>
+    </article>
+
+    <article class="panel">
+      <h2>Prices</h2>
+      <p class="headline">Elevated, but expectations are anchored.</p>
+      <p>CPI rose 2.9% in August, and core CPI rose 3.1% for the third month in a row. Core PCE, the Fed&rsquo;s preferred gauge, rose 2.9% over the year, and headline PCE rose 2.7%.</p>
+      <figure>
+        <img src="fig-core-pce.png" alt="Line chart of core PCE and PCE year-over-year change, 2019 to 2025.">
+        <figcaption>Core PCE and PCE, percent change from a year ago. Source: BEA (as shown in the 2025 deck).</figcaption>
+      </figure>
+      <figure>
+        <img src="fig-cpi.png" alt="Line chart of CPI and core CPI year-over-year change, 2019 to 2025: peak near 9% in 2022, then decline.">
+        <figcaption>CPI and core CPI, percent change from a year ago. Source: BLS (as shown in the 2025 deck).</figcaption>
+      </figure>
+      <figure>
+        <img src="fig-inflation-expectations.png" alt="Line chart of median one-year and three-year ahead inflation expectations, 2019 to 2025.">
+        <figcaption>Median one- and three-year ahead inflation expectations. Source: NY Fed (as shown in the 2025 deck).</figcaption>
+      </figure>
+      <p>Monthly, goods prices rose 0.1% after falling 0.1% in July, and services rose 0.3%. Producer prices for final demand fell 0.1% in August.</p>
+      <h3>Tariffs</h3>
+      <p>The key question is whether tariffs create a persistent push on prices or a one-time shock. Firms stockpiled inventories before tariffs took effect, so some costs have not passed through yet. Given historical pass-through, we believe the effects are more likely temporary than entrenched, but we need to watch the next six months.</p>
+      <h3>Expectations and wages</h3>
+      <p>The New York Fed&rsquo;s median one-year-ahead expectation rose to 3.2%, and the three-year measure held at 3.0%. Both are above 2%, but stable and in line with pre-pandemic norms. A recent paper by Nakamura et al. (2025) argues that the Fed&rsquo;s credibility gives it room to look through short-run price shocks. Median wage growth has declined since June 2024.</p>
+    </article>
+
+    <article class="panel">
+      <h2>Consumers and markets</h2>
+      <p class="headline">Stressed, but not breaking.</p>
+      <p>PCE spending rose from 2.5% over the year in July to 2.7% in August. Confidence is weaker. The Michigan consumer expectations index fell to 55.1 in September, and about 60% of consumers expect unemployment to rise over the next year, the highest share since the Great Recession.</p>
+      <figure>
+        <img src="fig-sentiment.png" alt="Line chart of University of Michigan consumer sentiment, 2019 to 2025: falls to about 51 in 2025.">
+        <figcaption>University of Michigan consumer sentiment. Source: UMich Survey of Consumers (as shown in the 2025 deck).</figcaption>
+      </figure>
+      <h3>Balance sheets</h3>
+      <p>The average saving rate in 2025 has been about 4.5%, below the roughly 6% average before the pandemic. Bank of America data show median checking and savings balances for every income group are higher than in 2019. The New York Fed reports credit card and auto delinquencies were elevated but stable across the first two quarters of 2025.</p>
+      <figure>
+        <img src="fig-delinquency.png" alt="Line chart of the share of balances 90+ days delinquent for auto and credit card loans, 2019 to 2025.">
+        <figcaption>Share of balance 90+ days delinquent, auto and credit card. Source: NY Fed (as shown in the 2025 deck).</figcaption>
+      </figure>
+      <h3>Markets</h3>
+      <p>The two-year Treasury yield is 3.52%, about 60 basis points below the ten-year. The July and August job reports each moved rates down by about 20 basis points, which shows markets pricing in cuts in response to weak labor demand.</p>
+      <figure>
+        <img src="fig-yields.png" alt="Line chart of 2-year and 10-year Treasury yields, 2019 to 2025.">
+        <figcaption>2-year and 10-year Treasury yields. Source: Federal Reserve Board (as shown in the 2025 deck).</figcaption>
+      </figure>
+      <p>The VIX spiked above 50 in April and has since fallen to a range of 12 to 15. Many observers, Chair Powell among them, have called equity prices &ldquo;fairly highly valued,&rdquo; so low volatility may understate recession risk.</p>
+    </article>
+
+  </section>
+
+  <section class="bottom">
+    <div>
+      <h2>The decision</h2>
+      <p>The balance of risks has shifted toward weakness in labor demand. Inflation is still above target, but well-anchored expectations let us look through short-run tariff effects while we address the more urgent threat. The median Fed official expects 50 basis points of further cuts in 2025.</p>
+      <p>The recommendation was a small, measured cut that provides insurance against further demand-driven slowdowns. The committee voted unanimously in favor, while agreeing to monitor labor data, inflation expectations, and inflation itself during the rate-cutting cycle.</p>
+    </div>
+    <div>
+      <h2>My role and contact</h2>
+      <p>I chaired the team and created the graphs. I contributed heavily to the research and the narrative, and in the presentation I covered the August jobs data, inflation expectations, consumer spending, the yield curve, and the recommendation.</p>
+      <p>I am a senior studying economics at the University of Michigan, applying to jobs in finance and monetary policy. Contact: <a href="mailto:cmaddock@umich.edu">cmaddock@umich.edu</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Data period:</strong> data as of September 2025.</p>
+    <p><strong>Sources:</strong> Bureau of Economic Analysis; Bureau of Labor Statistics; Board of Governors of the Federal Reserve System; Federal Reserve Bank of New York; University of Michigan Survey of Consumers; Chicago Board Options Exchange; Atlanta Fed; American Enterprise Institute; Bank of America; RBC U.S. Inflation Watch; Nakamura et al. (2025). Figures and data points come from the 2025 College Fed Challenge deck and our presentation script, and have not yet been checked against the original data releases.</p>
+  </footer>
+
+</main>
+</body>
+</html>
